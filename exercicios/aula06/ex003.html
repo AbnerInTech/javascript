@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        var n1 = Number(window.prompt("Digite um número:")) // 'Number' faz com que o JS decida se é inteiro ou real.
+        var n2 = Number.parseInt(window.prompt("Digite outro número:")) // 'Number.parseInt' faz com que converta obrigatóriamente para inteiro.    
+        var n3 = Number.parseFloat(window.prompt("Digite mais um número:")) // 'Number.parseFloat' faz com que converte sempre para real
+        var s = n1 + n2 + n3
+        window.alert(`A soma de ${n1} + ${n2} + ${n3} resulta em ${s}`)
+    </script>
+</body>
+</html>
