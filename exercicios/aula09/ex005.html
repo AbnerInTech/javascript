@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(33, 75, 75);
+            color: white;
+            font: normal 15pt Arial;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Isso foi modificado por seleção de classe</h1>
+    <p>Isso por seleção por tag</p>
+    <p class="paragrafo">Isso por seleção querrySelector</p>
+    <div id= "caixa">Clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'white'
+
+        var t = window.document.getElementsByClassName('titulo')[0]
+        t.style.background = 'pink'
+        t.style.color = 'black'
+
+        var caixa = window.document.getElementById('caixa')
+        caixa.style.background = 'red'
+        caixa.innerText = 'E isso por id'
+        caixa.style.color = 'white'
+
+        var p2 = window.document.querySelector('p.paragrafo')
+        p2.style.color = 'gray'
+    </script>
+</body>
+</html>
